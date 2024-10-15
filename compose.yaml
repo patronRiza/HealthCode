@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=healthdb'
+      - 'POSTGRES_PASSWORD=12345'
+      - 'POSTGRES_USER=admin'
+    ports:
+      - '5432:5432'
